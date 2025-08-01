@@ -1,0 +1,109 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(244, 244, 249);
+    color: rgb(30, 30, 30);
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.perfil .dados h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: rgb(30, 30, 30);
+}
+
+.perfil .dados h3 {
+    font-size: 18px;
+    color: rgb(70, 130, 180);
+    margin-bottom: 5px;
+}
+
+.perfil .dados p {
+    padding-bottom: 5px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: rgb(70, 130, 180);
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.sumario p,
+.empresa p,
+.habilidades ul,
+.educacao-1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(90, 90, 90);
+}
+
+.habilidades ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.habilidades ul li {
+    margin-bottom: 5px;
+}
+
+.empresa h3, .educacao-1 h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(30, 30, 30);
+}
+
+.empresa ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.empresa ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
