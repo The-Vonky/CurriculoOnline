@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+
+    <!-- Formulário -->
+    <div style="flex: 1; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2>Preencha seus dados</h2>
+
+        <label>Nome:</label>
+        <input type="text" id="nome">
+
+        <label>Cargo:</label>
+        <input type="text" id="cargo">
+
+        <label>Email:</label>
+        <input type="email" id="email">
+
+        <label>Telefone:</label>
+        <input type="text" id="telefone">
+
+        <label>Data de Nascimento:</label>
+        <input type="text" id="dataNascimento">
+
+        <label>LinkedIn:</label>
+        <input type="text" id="linkedin">
+
+        <label>Foto:</label>
+        <input type="file" id="foto" accept="image/*">
+
+        <label>Resumo:</label>
+        <textarea id="resumo"></textarea>
+
+        <hr>
+        <h3>Experiências</h3>
+        <div id="experiencias"></div>
+        <button type="button" onclick="adicionarExperiencia()">+ Adicionar Experiência</button>
+
+        <hr>
+        <h3>Habilidades</h3>
+        <div id="habilidades"></div>
+        <button type="button" onclick="adicionarHabilidade()">+ Adicionar Habilidade</button>
+
+        <hr>
+        <h3>Educação</h3>
+        <div id="educacao"></div>
+        <button type="button" onclick="adicionarEducacao()">+ Adicionar Educação</button>
+
+        <hr>
+        <button id="btnPDF" style="margin-top: 10px;">Baixar PDF</button>
+    </div>
+
+    <!-- Currículo -->
+    <div style="flex: 2;">
+        <div class="container" id="curriculo">
+            <header>
+                <div class="perfil">
+                    <img id="previewFoto" src="" alt="Foto de perfil">
+                    <div class="dados">
+                        <h1 id="previewNome">Seu Nome</h1>
+                        <h3 id="previewCargo">Seu Cargo</h3>
+                        <p>Email: <span id="previewEmail">email@email.com</span> |
+                           Telefone: <span id="previewTelefone">(00) 00000-0000</span></p>
+                        <p>Data de Nascimento: <span id="previewDataNascimento">01/01/2000</span></p>
+                        <p>LinkedIn: <a id="previewLinkedin" href="#">linkedin.com</a></p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="sumario">
+                    <h2>Resumo:</h2>
+                    <p id="previewResumo">Seu resumo vai aparecer aqui...</p>
+                </section>
+                <section class="xp">
+                    <h2>Experiência Profissional:</h2>
+                    <div id="previewExperiencias"></div>
+                </section>
+                <section class="habilidades">
+                    <h2>Habilidades:</h2>
+                    <ul id="previewHabilidades"></ul>
+                </section>
+                <section class="educacao">
+                    <h2>Educação:</h2>
+                    <div id="previewEducacao"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
